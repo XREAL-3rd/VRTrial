@@ -170,7 +170,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 148366991}
-  speed: 5
+  move_speed: 2
+  rotator: {fileID: 148366993}
+  turn_speed: 20
 --- !u!4 &148366993
 Transform:
   m_ObjectHideFlags: 0
@@ -672,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
