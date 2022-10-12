@@ -21,11 +21,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.Events;
 
 namespace Oculus.Interaction
 {
     public class Grabbable : PointableElement, IGrabbable
     {
+        //////////////////////////////////////
+
+        public UnityEvent OnGrabBegin;
+        public UnityEvent OnGrabEnd;
+
+        void GrabBegin()
+        {
+            Debug.Log("grabbed");
+            OnGrabBegin.Invoke();
+        }
+
+        void GrabEnd()
+        {
+            Debug.Log("released");
+            OnGrabEnd.Invoke();
+        }
+
+        //////////////////////////////////////
+
         [SerializeField, Interface(typeof(ITransformer)), Optional]
         private MonoBehaviour _oneGrabTransformer = null;
 
