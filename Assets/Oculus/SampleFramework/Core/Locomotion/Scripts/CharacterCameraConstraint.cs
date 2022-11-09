@@ -88,6 +88,7 @@ public class CharacterCameraConstraint : MonoBehaviour
 	/// </summary>
 	private void CameraUpdate()
 	{
+		/*
 		// Check whether the camera is inside of geometry or on the other side of geometry.
 		// Then check if any geometry would be clipped.  Fade out screen accordingly.
 		float clippingOverlap = 0.0f;
@@ -109,7 +110,7 @@ public class CharacterCameraConstraint : MonoBehaviour
 		{
 			OVRScreenFade.instance.SetExplicitFade(0.0f);
 		}
-
+		*/
 		// Offset the camera into the capsule that's used so that it doesn't scrape any
 		// overhanging geometry that the player can barely fit through.  Currently just
 		// based on where we start fading.
